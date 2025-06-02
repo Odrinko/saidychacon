@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Generar galería dinámica
     const galleryGrid = document.getElementById('gallery-grid');
-    const totalPhotos = 15;
+    const totalPhotos = 11;
     
     for (let i = 1; i <= totalPhotos; i++) {
         const galleryItem = document.createElement('div');
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         galleryItem.style.animationDelay = `${i * 0.1}s`;
         
         const img = document.createElement('img');
-        img.src = `images/photo${i}.jpg`;
+        img.src = `images/photo${i}.jpeg`;
         img.alt = `Fotografía submarina ${i}`;
         img.loading = "lazy";
         
